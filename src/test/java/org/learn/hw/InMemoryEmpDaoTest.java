@@ -11,7 +11,7 @@ public class InMemoryEmpDaoTest extends TestCase {
 	public void testAddEmployee() {
 		employeeDao.addEmployee(new Employee("Vijay", 6, 2));
 		
-		assertTrue("One employee should be available in the repo", employeeDao.getEmployees().size() == 3);
+		assertEquals("List size should be 1", 1, employeeDao.getEmployees().size());
 	}
 	
 }
